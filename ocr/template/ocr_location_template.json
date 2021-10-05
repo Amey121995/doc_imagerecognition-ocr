@@ -1,0 +1,23 @@
+[
+    {
+       "template_name" : "nid_back",
+      "template_image_name" : "nid_back.jpg",
+      "OCR_LOCATIONS" : [{"id":"thikana", "bbox": {"x":80,"y": 365,"w":1099, "h":235}, "filter":["address_in_bangla"]},
+                          {"id":"blood_group", "bbox": {"x": 329, "y":627, "w":129, "h":70}, "filter":["blood_group"]},
+                          {"id":"place_of_birth", "bbox": {"x" : 741,"y": 633,"w": 429,"h": 70}, "filter":["birth_place"]},
+                          {"id":"issue_date", "bbox":{"x":1621, "y":631, "w":290, "h":70}, "filter":["issue_date_of_document"]},
+                          {"id":"mrz", "bbox":{"x":87, "y":833, "w":1771, "h":293}, "filter":["mrz_region"]}
+                        ]
+      },
+      {
+       "template_name" : "nid_front",
+        "template_image_name" : "nid_front.jpg",
+        "OCR_LOCATIONS" : [{"id":"name_in_bangla", "bbox": {"x":630, "y":390, "w":824, "h":96}, "filter":["name_in_bangla"]},
+                           {"id":"name_in_english", "bbox": {"x":630, "y":551, "w":829, "h":70}, "filter":["english_name","1 ","\\", "/"]},
+                           {"id":"fathers_name_in_bangla", "bbox": {"x":630, "y":683, "w":829, "h":103}, "filter":["fathers_name"]},
+                           {"id":"mothers_name_in_bangla", "bbox": {"x":630, "y":833, "w":831, "h":101}, "filter":["mothers_name"]},
+                           {"id":"date_of_birth", "bbox": {"x":904, "y":969, "w":353, "h":85}, "filter":["dob"]},
+                           {"id":"NID", "bbox": {"x":900, "y":1077, "w":470, "h":90}, "filter":["NID_no"]}
+                        ]
+      }
+]
